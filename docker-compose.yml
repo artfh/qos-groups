@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  hi_prio_worker_1:
+    image: greenstones/qos-groups-worker
+    environment:
+      NODE_NAME: hi_prio_worker_1
+ 
+  hi_prio_worker_2:
+    image: greenstones/qos-groups-worker
+    environment:
+      NODE_NAME: hi_prio_worker_2
+
+  low_prio_worker_1:
+    image: greenstones/qos-groups-worker
+    environment:
+      NODE_NAME: low_prio_worker_1
+
+  haproxy:
+    image: haproxy
+    volumes:
+      - ./haproxy:/usr/local/etc/haproxy:ro
+    ports:
+      - 8080:8080
+      - 9091:9091
