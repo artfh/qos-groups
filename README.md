@@ -21,7 +21,7 @@ Examples:
 
 ## Example 1: Cluster with Priority Groups
 
-![example1](/Users/artfh/Projects/tmp/qos-groups/images/example1.svg)
+![example1](images/example1.svg)
 
 
 
@@ -157,7 +157,7 @@ request processed by node 'hi_prio_worker_2'
 
 
 
-![example1](/Users/artfh/Projects/tmp/qos-groups/images/example2.svg)
+![example1](images/example2.svg)
 
 
 
